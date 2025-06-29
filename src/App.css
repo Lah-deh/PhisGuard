@@ -53,7 +53,9 @@ ul button{
   height: 38rem;
   margin-left: 100px;
   margin-right: 100px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 .heroo {
@@ -61,8 +63,8 @@ ul button{
   color: white;
   text-align: center;
   padding-top: 20rem;
-  padding-left: 18rem;
-  padding-right: 15rem;
+  /* padding-left: 15rem; */
+  /* padding-right: 15rem; */
 }
 .hero h1{
   font-size: 38px;
@@ -72,7 +74,7 @@ ul button{
 }
 .hero button{
   margin-top: 26rem;
-  margin-left: 36rem;
+  /* margin-left: 36rem; */
   background-color: green;
   width: 160px;
   height: 30px;
@@ -157,7 +159,8 @@ ul button{
 .foot{
   display: flex;
   margin-top: 10rem;
-  gap: 26rem;
+  justify-content: space-evenly;
+  /* gap: 15rem; */
 }
 .foott{
   margin-top: 20px;
