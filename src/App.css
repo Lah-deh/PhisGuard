@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f7f7f7;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: inter;
+  margin-bottom: 10px;
+  
+  
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 30x;
+  
+  
+}
+.navv{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.nav img{
+  width: 5%;
+  height: 10%;
+}
+.nav ul{
+  display: flex;
+  list-style-type: none;
+  gap: 60px;
+  cursor: pointer;
+}
+ul button{
+  background-color: green;
+  border: 1px solid green;
+  width: 120px;
+  height: 30px;
+  border-radius: 30px;
+  color: white;
+}
+.hero{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-image: url("./assets/Images/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 38rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+  position: relative;
+}
+.heroo {
+  position: absolute;
+  color: white;
+  text-align: center;
+  padding-top: 20rem;
+  padding-left: 18rem;
+  padding-right: 15rem;
+}
+.hero h1{
+  font-size: 38px;
+}
+.hero p{
+  font-size: 20px;
+}
+.hero button{
+  margin-top: 26rem;
+  margin-left: 36rem;
+  background-color: green;
+  width: 160px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid green;
+  color: white;
+}
+.feature{
+  display: grid;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 15px;
+}
+.feature1{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  /* border: 1px solid black;
+  border-radius: 10px; */
+  
+}
+.feature2{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  /* border: 1px solid black;
+  border-radius: 10px; */
+  
+}
+.feature3{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  /* border: 1px solid black;
+  border-radius: 10px; */
+  
+}
+.FAQ{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+.FAQ h1{
+  margin-bottom: 13px;
+}
+.FAQ p{
+  display: none;
+}
+.FAQ1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.FAQ2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.FAQ3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.About{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+.about{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.about h3{
+  text-align: center;
+}
+.about p{
+  text-align: center;
+}
+.Footer{
+  margin-left: 170px;
+  margin-right: 170px;
+  
+}
+.foot{
+  display: flex;
+  margin-top: 10rem;
+  gap: 26rem;
+}
+.foott{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Foot p{
+  text-align: center;
+  margin-top: 20px;
+}
