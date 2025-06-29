@@ -22,9 +22,21 @@ body{
   margin-top: 30x;
   
   
+  
+}
+nav::scroll-marker{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
 }
 .navv{
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  z-index: 1000;
+  background-color: transparent;
+  top: 0;
+  background-color: white;
 }
 .nav img{
   width: 5%;
@@ -67,7 +79,7 @@ ul button{
   /* padding-right: 15rem; */
 }
 .hero h1{
-  font-size: 38px;
+  font-size: 42px;
 }
 .hero p{
   font-size: 20px;
@@ -145,6 +157,43 @@ ul button{
   margin-top: 20px;
   justify-content: space-between;
 }
+.boluu img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+.leoo img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+.walee img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+.emmaa img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+
 .about h3{
   text-align: center;
 }
