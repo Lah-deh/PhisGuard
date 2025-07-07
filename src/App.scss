@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h2{
+  font-size: 22px;
+  font-weight:bold ;
+  
+}
+hr{
+  margin-top: 20px;
+}
+body{
+  font-family: Inter;
+  color: black;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color:white;
+  top: 0;
+  position: sticky;
+  z-index: 1000;  
+  gap: 30%;
+  
+
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 20%;
+  height: 10%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.install-btn {
+  background-color: green;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: none;
+  
+}
+
+
+.side-drawer {
+  position: fixed;
+  top: 0;
+  left: -260px; 
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  color:black ;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-drawer.open {
+  left: 0;
+}
+
+.side-drawer a {
+  color:black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color:black ;
+  cursor: pointer;
+}
+.Hero{
+  background-image: url("./assets/Images/digital-techno-background-with-connecting-lines-dots.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  color: white;
+}
+.heroo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    padding-top: 10rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    
+  }
+  p{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  button{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    margin-bottom: 6rem;
+    
+  }
+}
+
+.Work{
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  h2{
+    font-size: 22px;
+    font-weight:bold ;
+    text-align: center;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 10%;
+    height: 5%;
+  }
+  
+}
+.card1{
+  width: 80%;
+  margin-top: 20px;
+  // border: 1px solid black;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  
+}
+.card2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card3{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.Features{
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  h2{
+    font-size: 22px;
+    font-weight:bold ;
+    text-align: center;
+  }
+  .Cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 10%;
+    height: 5%;
+  }
+}
+.Card1{
+  width: 80%;
+  margin-top: 20px;
+  // border: 1px solid black;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  
+}
+.Card2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Card3{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.Watch{
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  h3{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .demo{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    // max-height: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0, 8px,16px rgba(0,0,0,0.25);
+
+  }
+}
+
+
+.Feed{
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  .Check{
+    input{
+      width: 60%;
+      height: 30px;
+      margin-top: 10px;
+      padding: 5px;
+      border: 1px solid green;
+      border-radius: 6px;
+    }
+    button{
+      background-color: green;
+      color: white;
+      border: 1px solid green;
+      border-radius: 10px;
+      width: 90px;
+      height: 30px;
+      margin-top: 5px;
+      
+      
+    }
+  }
+  .feedd{
+    margin-top: 30px;
+    input{
+      width: 60%;
+      height: 60px;
+      margin-top: 10px;
+      padding: 5px;
+      border: 1px solid green;
+      border-radius: 6px;
+    }
+    button{
+      background-color: green;
+      color: white;
+      border: 1px solid green;
+      border-radius: 10px;
+      width: 170px;
+      height: 30px;
+      margin-top: 5px;
+      
+      
+    }
+  }
+}
+
+.Privacy{
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  h4{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  ul{
+    
+    margin-left: 15px;
+    margin-right: 15px;
+    
+  }
+}
+
+.FAQ{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 50px;
+  hr{
+    margin-bottom: 10px;
+  }
+  p{
+    display: none;
+  }
+  h3{
+    font-weight: 500;
+  }
+}
+
+
+.About{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 50px;
+  .about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .boluu img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+  .leoo img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+  .walee img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+  .emmaa img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+ 
+}
+
+
+.Footer{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  
+  .foot{
+    display: flex;
+    margin-top: 10rem;
+    justify-content: space-evenly;
+    /* gap: 15rem; */
+  }
+  .foott{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Foot p{
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+}
+
+
+@media screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+ 
+}
+
+@media screen and (min-width:768px){
+  .header{
+    display: flex;
+    gap: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .nav-links{
+    display: flex;
+    gap: 15px;
+  }
+
+  .heroo{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .Work{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .Features{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .Watch{
+    margin-left: 50px;
+    margin-right: 50px;
+    .demo {
+      max-width: 100%;
+      object-fit: contain;
+      width: 100%;
+      height: 50rem;
+      
+
+    }
+  }
+
+  .Feed{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .Privacy{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .FAQ{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .About{
+    margin-left: 50px;
+    margin-right: 50px;
+    .about{
+      flex-direction: row;
+    }
+    
+  }
+}
+
+
+
+@media screen and (min-width:1024px){
+  .header{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .heroo{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .Work{
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      font-size: 30px;
+      font-weight:bold ;
+      text-align: start;
+    }
+    .cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 30px;
+      align-items: center;
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      width: 8%;
+      height: 5%;
+    }
+  }
+  .Features{
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      font-size: 30px;
+      font-weight:bold ;
+      text-align: start;
+    }
+    .Cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 30px;
+      align-items: center;
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      width: 8%;
+      height: 5%;
+    }
+  }
+
+  .Watch{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h3{
+      text-align: start;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    .demo{
+      max-width: 100%;
+      object-fit: contain;
+      width: 100%;
+      height: 60rem;
+
+    }
+  }
+  .Feed{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h3{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    .Check{
+      input{
+        font-size: 20px;
+        height: 60px;
+      }
+      button{
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+    .feedd{
+      input{
+        font-size: 20px;
+        height: 130px;
+      }
+      button{
+        width: 190px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+  .Privacy{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    h4{
+      font-size: 24px;
+    }
+    ul{
+      font-size: 22px;
+    }
+  }
+
+  .FAQ{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+  }
+  .About{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    h3{
+      font-size: 22px;
+    }
+    .about{
+      justify-content: space-between;
+      text-align: center;
+    }
+    .boluu img{
+      width: 210px;
+      height: 210px;
+    }
+    .leoo img{
+      width: 210px;
+      height: 210px;
+    }
+    .walee img{
+      width: 210px;
+      height: 210px;
+    }
+    .emmaa img{
+      width: 210px;
+      height: 210px;
+    }
+  }
+}
+
+
+
+@media screen and (min-width:1440px){
+  .header{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .heroo{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .Work{
+    margin-left: 100px;
+    margin-right: 70px;
+    h2{
+      font-size: 30px;
+      font-weight:bold ;
+      text-align: start;
+    }
+    .cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 30px;
+      align-items: center;
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      width: 5%;
+      height: 5%;
+    }
+  }
+
+  .Features{
+    margin-left: 100px;
+    margin-right: 70px;
+    h2{
+      font-size: 30px;
+      font-weight:bold ;
+      text-align: start;
+    }
+    .Cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 30px;
+      align-items: center;
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      width: 5%;
+      height: 5%;
+    }
+  }
+
+
+  .Watch{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h3{
+      text-align: start;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    .demo{
+      max-width: 100%;
+      object-fit: contain;
+      width: 100%;
+      height: 60rem;
+
+    }
+  }
+
+  .Feed{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h3{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    .Check{
+      input{
+        font-size: 20px;
+        height: 60px;
+      }
+      button{
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+    .feedd{
+      input{
+        font-size: 20px;
+        height: 130px;
+      }
+      button{
+        width: 190px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .Privacy{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    h4{
+      font-size: 24px;
+    }
+    ul{
+      font-size: 22px;
+    }
+  }
+
+  .FAQ{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+  }
+
+  .About{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    h2{
+      text-align: start;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    h3{
+      font-size: 22px;
+    }
+    .about{
+      justify-content: space-between;
+      text-align: center;
+    }
+    .boluu img{
+      width: 230px;
+      height: 230px;
+    }
+    .leoo img{
+      width: 230px;
+      height: 230px;
+    }
+    .walee img{
+      width: 230px;
+      height: 230px;
+    }
+    .emmaa img{
+      width: 230px;
+      height: 230px;
+    }
+  }
+}
+
+
+
