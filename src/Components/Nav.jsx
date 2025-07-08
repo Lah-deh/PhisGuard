@@ -24,7 +24,7 @@ export default function Nav() {
         <a href="#feed">Feedbacks</a>
         <a href="#faq">FAQs</a>
         <a href="#about">About Us</a>
-        <a className="install-btn" href="#install">Get PhisDuard</a>
+        <a className="install-btn" href='https://github.com/Lah-deh/PhisGuard_Zip/archive/refs/heads/main.zip'>Get PhisGuard</a>
       </nav>
 
       
@@ -42,7 +42,7 @@ export default function Nav() {
         <a onClick={() => setIsOpen(false)} href="#feed">Feedbacks</a>
         <a onClick={() => setIsOpen(false)} href="#faq">FAQs</a>
         <a onClick={() => setIsOpen(false)} href="#about">About Us</a>
-        <a onClick={() => setIsOpen(false)} className="install-btn" href="#install">
+        <a onClick={() => setIsOpen(false)} className="install-btn" href="https://github.com/Lah-deh/PhisGuard_Zip/archive/refs/heads/main.zip">
           Get PhisGuard
         </a>
       </div>
