@@ -19,13 +19,15 @@ const Feed = () => {
 
       const data = await response.json();
 
-      if (data.prediction === 1) {
-        alert(`⚠️ Warning: This link is flagged as phishing!\nConfidence: ${Math.round(data.confidence * 100)}%`);
-      } else if (data.prediction === 0) {
-        alert('✅ This link is safe.');
+      if (data.prediction === "Phishing") {
+        alert(`⚠️ Warning: This link is flagged as phishing!\nSeverity: ${data.severity}\nConfidence: ${Math.round(data.confidence)}%`);
+      } else if (data.prediction === "Legitimate") {
+        alert(`✅ This link is safe.\nConfidence: ${Math.round(data.confidence)}%`);
+
       } else {
         alert('❓ Could not determine the link status.');
       }
+
 
     } catch (error) {
       console.error('Error checking link:', error);
