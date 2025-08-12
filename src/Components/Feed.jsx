@@ -11,7 +11,7 @@ const Feed = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://phishguard-api-0nyx.onrender.com', {
+      const response = await fetch('https://phishguard-api-0nyx.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: link })
