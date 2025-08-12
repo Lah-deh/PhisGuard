@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   const handleDownload = () => {
     window.open(
-      'https://github.com/Lah-deh/PhisGuard_Zip/archive/refs/heads/main.zip',
+      'https://github.com/Lah-deh/PhisGuard_extension/archive/refs/heads/main.zip',
       '_blank'
     );
   }
